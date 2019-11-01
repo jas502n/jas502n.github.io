@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://twiiter.com/jas502n/"/>
-  <updated>2019-10-31T14:23:40.287Z</updated>
+  <updated>2019-10-31T18:53:23.052Z</updated>
   <id>http://twiiter.com/jas502n/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>我的第一篇文章</title>
+    <title>Apache Solr 远程代码命令执行漏洞预警</title>
     <link href="http://twiiter.com/jas502n/2019/10/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
     <id>http://twiiter.com/jas502n/2019/10/30/我的第一篇文章/</id>
     <published>2019-10-30T14:58:10.000Z</published>
-    <updated>2019-10-31T14:23:40.287Z</updated>
+    <updated>2019-10-31T18:53:23.052Z</updated>
     
     <summary type="html">
     
@@ -36,8 +36,10 @@
     </summary>
     
     
+      <category term="模板注入" scheme="http://twiiter.com/jas502n/categories/%E6%A8%A1%E6%9D%BF%E6%B3%A8%E5%85%A5/"/>
     
-      <category term="test" scheme="http://twiiter.com/jas502n/tags/test/"/>
+    
+      <category term="solr rce" scheme="http://twiiter.com/jas502n/tags/solr-rce/"/>
     
   </entry>
   
